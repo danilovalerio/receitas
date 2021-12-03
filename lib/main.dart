@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:receitas/screens/categories_screen.dart';
@@ -7,6 +9,18 @@ void main() {
     return MaterialApp(
       title: "Vamos Cozinhar",
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        accentColor: Colors.amber,
+        fontFamily: 'Raleway',
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+          caption: const TextStyle(
+            fontSize: 20,
+            fontFamily: 'RobotoCondensed',
+          ),
+        ),
+      ),
       //Device Preview
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
@@ -29,6 +43,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        accentColor: Colors.amber,
+        fontFamily: 'Raleway',
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+          caption: const TextStyle(
+            fontSize: 20,
+            fontFamily: 'RobotoCondensed',
+          ),
+        ),
       ),
       home: CategoriesScreen(),
     );
