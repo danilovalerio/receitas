@@ -5,9 +5,8 @@ import 'package:receitas/screens/categories_screen.dart';
 void main() {
   runApp(DevicePreview(builder: (context) {
     return MaterialApp(
-      title: "Title",
+      title: "Vamos Cozinhar",
       debugShowCheckedModeBanner: false,
-
       //Device Preview
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
@@ -16,7 +15,6 @@ void main() {
       home: CategoriesScreen(),
     );
   }));
-
   // runApp(const MyApp());
 }
 
