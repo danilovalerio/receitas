@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // runApp(DevicePreview(builder: (context) {
+  //   return MaterialApp(
+  //     title: "Title",
+  //     debugShowCheckedModeBanner: false,
+  //
+  //     //Device Preview
+  //     builder: DevicePreview.appBuilder,
+  //     locale: DevicePreview.locale(context),
+  //     useInheritedMediaQuery: true,
+  //
+  //     home: MyHomePage(),
+  //   );
+  // }));
+
   runApp(const MyApp());
 }
 
