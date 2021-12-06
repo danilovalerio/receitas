@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:receitas/models/category.dart';
+import 'package:receitas/models/complexity_enum.dart';
+import 'package:receitas/models/cost_enum.dart';
 import 'package:receitas/models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
@@ -55,7 +57,6 @@ const DUMMY_CATEGORIES = const [
   ),
 ];
 
-/*
 const DUMMY_MEALS = const [
   Meal(
     id: 'm1',
@@ -379,5 +380,3 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
 ];
-*/
-
