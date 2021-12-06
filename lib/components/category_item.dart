@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:receitas/models/category.dart';
-import 'package:receitas/screens/categories_meals_screen.dart';
+import 'package:receitas/utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
   final Category category;
@@ -11,13 +11,21 @@ class CategoryItem extends StatelessWidget {
     required this.category,
   }) : super(key: key);
 
-  void _selecionaCategoria(BuildContext ctx) {
+  void _selecionaCategoria(BuildContext context) {
+    /*
+    ///Navegação v1
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
           return CategoriesMealsScreen(category: category,);
         },
       ),
+    );*/
+
+    ///Navegação v2 - Chamada com rota nomeada
+    Navigator.of(context).pushNamed(
+      AppRoutes.CATEGORIES_MEALS,
+      arguments: category,
     );
   }
 
